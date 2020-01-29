@@ -8,12 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		E3D5B64123E229CF00E9E774 /* LoadingUI.h in Headers */ = {isa = PBXBuildFile; fileRef = E3D5B63F23E229CF00E9E774 /* LoadingUI.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E3D5B67223E22C4300E9E774 /* IndeterminateLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3D5B67123E22C4300E9E774 /* IndeterminateLoadingView.swift */; };
+		E3D5B67423E22C5C00E9E774 /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3D5B67323E22C5C00E9E774 /* LoadingViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		E3D5B63C23E229CF00E9E774 /* LoadingUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LoadingUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3D5B63F23E229CF00E9E774 /* LoadingUI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoadingUI.h; sourceTree = "<group>"; };
 		E3D5B64023E229CF00E9E774 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E3D5B67123E22C4300E9E774 /* IndeterminateLoadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = IndeterminateLoadingView.swift; path = ../../../IndeterminateLoadingView.swift; sourceTree = "<group>"; };
+		E3D5B67323E22C5C00E9E774 /* LoadingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,7 +51,9 @@
 			isa = PBXGroup;
 			children = (
 				E3D5B63F23E229CF00E9E774 /* LoadingUI.h */,
+				E3D5B67123E22C4300E9E774 /* IndeterminateLoadingView.swift */,
 				E3D5B64023E229CF00E9E774 /* Info.plist */,
+				E3D5B67323E22C5C00E9E774 /* LoadingViewController.swift */,
 			);
 			path = LoadingUI;
 			sourceTree = "<group>";
@@ -95,6 +101,7 @@
 				TargetAttributes = {
 					E3D5B63B23E229CF00E9E774 = {
 						CreatedOnToolsVersion = 11.1;
+						LastSwiftMigration = 1110;
 					};
 				};
 			};
@@ -131,6 +138,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E3D5B67223E22C4300E9E774 /* IndeterminateLoadingView.swift in Sources */,
+				E3D5B67423E22C5C00E9E774 /* LoadingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,6 +269,7 @@
 		E3D5B64523E229CF00E9E774 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -275,6 +285,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Lambda-Shool-learner.LoadingUI";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -283,6 +294,7 @@
 		E3D5B64623E229CF00E9E774 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
